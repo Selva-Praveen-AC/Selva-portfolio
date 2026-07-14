@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --bg:#0A0A0F;
+    --card:#141428;
+    --accent1:#6A0DAD;
+    --text:#EAEAEA;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: "Bona Nova SC", serif;
+    font-size: 13px;
+}
+
+#container{
+    height: 1590px;
+    width: 650px;
+    position: relative;
+    left: 285px;
+}
+
+nav{
+    padding: 20px 20px;
+    color: var(--text);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+}
+
+#abt{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+#home{
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+    position: relative;
+    top:20px;
+}
+
+#about{
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+    position: relative;
+    top:40px;
+}
+
+#education{
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+    position: relative;
+    top:60px
+}
+
+.education-grid{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(140px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.education-card{
+    padding: 10px;
+    background-color: var(--card);
+    box-shadow: 0px 0px 5px var(--accent1);
+    height: 120px;
+    width: 500px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#skills{
+    height: auto;
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+    position: relative;
+    top:80px;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-card{
+    padding: 10px;
+    background-color: var(--card);
+    box-shadow: 0px 0px 5px var(--accent1);
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#projects{
+    height: auto;
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    position: relative;
+    top:100px;
+    border-radius: 20px;
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card{
+    padding: 10px;
+    background-color: var(--card);
+    box-shadow: 0px 0px 5px var(--accent1);
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+}
+
+button{
+    height: 30px;
+    width: 90px;
+    border-radius: 10px;
+    background-color: var(--accent1);
+    transform: translateX(95px);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#btn1{
+    transform: translate(90px,45px);
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+#contacts{
+    height: auto;
+    padding: 20px 20px;
+    border: 1px solid var(--accent1);
+    position: relative;
+    top:120px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.contacts-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.contact-card{
+    padding: 10px;
+    background-color: var(--card);
+    box-shadow: 0px 0px 5px var(--accent1);
+    height: 20px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.skill-card:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.6s;
+    box-shadow: 0px 0px 7px 7px var(--accent1);
+}
+
+.project-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+    box-shadow: 0px 0px 7px 7px var(--accent1);
+}
+
+.contact-card:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.6s;
+    box-shadow: 0px 0px 7px 7px var(--accent1);
+}
+
+button:hover{
+    position: relative;
+    bottom:5px;
+    transition-duration: 1s;
+}
