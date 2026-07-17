@@ -77,7 +77,7 @@ body{
     height: 200px;
 }
 
-h2{
+#port{
     font-variant: small-caps;
     letter-spacing: 20px; 
     text-align: center;
@@ -92,7 +92,7 @@ h3{
     text-align: center;
 }
 
-p{
+#image>#seek{
     padding: 30px;
     font-variant: small-caps;
     font-size: 26px;
@@ -127,4 +127,371 @@ font-variant:small-caps;
     transform: scale(1.2,1.2);
     transition-duration: 0.5s;
     background-color: var(--accent1);
+}
+
+/*-----------------------------------about html styling---------------------*/
+
+#aboutme{
+    height: 550px;
+    width: 650px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+    position: relative;
+    top: 40px;
+    left: 450px;
+}
+
+#imgabt>#ai{
+    height: 300px;
+    width: 650px;
+    position: relative;
+    top: 20px;
+    left: 450px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+}
+
+#aboutme{
+    height: 300px;
+    position: relative;
+    top: 60px;
+}
+
+#aboutme>.section-title{
+       text-align: left;
+       padding: 20px 20px;
+}
+
+#aboutme>.div-title{
+    padding: 20px 20px;
+    font-variant: small-caps;
+}
+
+#aboutme>.detail{
+    padding: 20px 20px;
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+}
+
+#education{
+    height: 550px;
+    width: 650px;
+    position: relative;
+    top: 100px;
+    left: 450px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+}
+
+#education>.education-title{
+    font-variant: small-caps;
+    padding: 20px 20px;
+}
+
+#education>.education-grid{
+    padding: 20px;
+    height: 230px;
+    width: 550px;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content:center ;
+    align-items: center;
+}
+
+#education>.education-grid>.education-card{
+    padding: 20px 20px;
+    height: 110px;
+    width: 500px;
+    border: 1px solid var(--accent1);
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+}
+
+#skills{
+    height: 550px;
+    width: 650px;
+    position: relative;
+    top: 140px;
+    left: 450px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;    
+}
+
+#skills>.section-title{
+    font-variant: small-caps;
+    padding: 20px 20px;
+}
+
+#skills>.skill-grid{
+    padding: 20px;
+    height: 230px;
+    width: 550px;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items:center ;
+}
+
+#skills>.skill-grid>.skill-card{
+    padding: 20px 20px;
+    height: 60px;
+    width: 140px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;  
+    text-align: center;  
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts{
+    height: 230px;
+    width: 650px;
+    border: 1px solid var(--accent1);
+    position: relative;
+    top: 180px;
+    left: 450px;
+    border-radius: 20px;
+}
+
+#contacts>.contact-section{
+    font-variant: small-caps;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+#contacts>.contacts-grid{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+#contacts>.contacts-grid>.contact-card{
+    height: 50px;
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid var(--accent1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#contacts>.contacts-grid>.contact-card>a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+#imgabt>img:hover{
+    box-shadow: 3px 4px 15px var(--accent1);
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+#aboutme:hover{
+    box-shadow: 3px 4px 15px var(--accent1);
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+#education:hover{
+    box-shadow: 3px 4px 15px var(--accent1);
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+#skills:hover{
+    box-shadow: 3px 4px 15px var(--accent1);
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
+
+#skills>.skill-grid>.skill-card:hover{
+    box-shadow: 0px 0px 10px 10px var(--accent1);
+    transform: scale(1.01,1.01);
+    transition-duration: 0.5s;
+}
+
+#contacts:hover{
+    box-shadow: 3px 4px 15px var(--accent1);
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;  
+}
+
+#contacts>.contacts-grid>.contact-card:hover{
+    box-shadow: 0px 0px 10px 10px var(--accent1);
+    transform: scale(1.01,1.01);
+    transition-duration: 0.5s;
+}
+
+#next1{
+    height: 40px;
+    width: 100px;
+    background-color: var(--bg);
+    border: 1px solid var(--accent1);
+    position: relative;
+    top:165px;
+    left: 1300px;
+    border-radius: 10px;
+}
+
+#previous{
+    height: 40px;
+    width: 135px;
+    background-color: var(--bg);
+    border: 1px solid var(--accent1);
+    position: relative;
+    top:200px;
+    left: 100px;
+    border-radius: 10px;
+}
+
+#next1:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
+    background-color: var(--accent1);
+}
+
+#previous:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
+    background-color: var(--accent1);
+}
+
+/*-------------------Project.html styling----------------------*/
+
+.ai1{
+    height: 300px;
+    width: 550px;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    /* border: 1px solid var(--accent1); */
+    border-radius: 20px;
+}
+
+#prj1{
+    height: 1900px;
+    width: 850px;
+    position: relative;
+    top: 30px;
+    left: 350px;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+}
+
+.cont1{
+    height: 850px;
+    width: 650px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border-radius: 20px; 
+    background-color: var(--card);
+}
+
+#prj1>.section-title{
+    font-variant: small-caps;
+    padding: 20px 20px;
+}
+
+#prj1>.project-grid{
+    padding: 20px;
+    height: 230px;
+    width: 550px;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content:center ;
+    align-items: center;
+    border: 1px solid var(--accent1);
+    border-radius: 20px;
+}
+
+#prj1>.cont1>.project-grid>.project-card{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+
+#prj1>.cont1>.project-grid>.project-card>.hd1{
+    padding: 20px 20px;
+    font-size: 20px;
+}
+#prj1>.cont1>.project-grid>.project-card>.p1{
+    padding: 40px 20px;
+    font-size: 20px;
+}
+#prj1>.cont1>.project-grid>.project-card>.l1{
+    padding: 20px 20px;
+    font-size: 20px;
+    text-align: left;
+    gap: 10px;
+    background-color: var(--card);
+}
+#space{
+    position: relative;
+    top:100px
+}
+#previous1{
+    height: 40px;
+    width: 135px;
+    background-color: var(--bg);
+    border: 1px solid var(--accent1);
+    position: relative;
+    top:90px;
+    left: 100px;
+    border-radius: 10px;
+}
+
+.button{
+    height: 30px;
+    width: 120px;
+    border: 1px solid var(--accent1);
+    background-color: var(--accent1);
+    border-radius: 5px;
+    position: relative;
+    left: 250px;
+}
+.button>.a3{
+    text-decoration: none;
+    position: relative;
+    left: 10px;
+    top:3px;
+}
+.button>.a3:link{
+    text-decoration: none;
+    color: var(--text);
+}
+
+#previous1:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 0.5s;
+    background-color: var(--accent1);
+}
+
+.cont1:hover{
+    box-shadow: 0px 0px 10px 10px var(--accent1);
+    transform: scale(1.02,1.02);
+    transition-duration: 0.8s;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 10px 10px var(--bg);
+    transform: scale(1.02,1.02);
+    transition-duration: 0.8s;
 }
