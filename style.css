@@ -495,3 +495,91 @@ font-variant:small-caps;
     transform: scale(1.02,1.02);
     transition-duration: 0.8s;
 }
+
+/* ================= Responsive ================= */
+@media screen and (max-width:768px){
+
+    #about,
+    #image,
+    #aboutme,
+    #education,
+    #skills,
+    #contacts,
+    #prj1{
+        width:95%;
+        left:2.5%;
+        height:auto;
+    }
+
+    #imgabt>#ai,
+    #image>img,
+    .ai1{
+        width:100%;
+        height:auto;
+        left:0;
+        top:0;
+    }
+
+    #image>.text,
+    #education>.education-grid,
+    #skills>.skill-grid,
+    #prj1>.project-grid,
+    .cont1{
+        width:100%;
+        left:0;
+    }
+
+    #education>.education-grid>.education-card{
+        width:100%;
+        height:auto;
+    }
+
+    #skills>.skill-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    #contacts>.contacts-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cont1{
+        height:auto;
+    }
+
+    #about{
+        flex-direction:column;
+        height:auto;
+        gap:15px;
+        padding:20px;
+    }
+
+    #about>ul{
+        flex-direction:column;
+        gap:10px;
+        margin-right:0;
+    }
+
+    #next,
+    #next1,
+    #previous,
+    #previous1{
+        position:static;
+        margin:20px auto;
+        display:block;
+    }
+
+    .button{
+        left:0;
+        margin:20px auto;
+        display:block;
+    }
+
+    #port{
+        letter-spacing:8px;
+    }
+
+    h3,
+    #image>#seek{
+        font-size:20px;
+    }
+}
